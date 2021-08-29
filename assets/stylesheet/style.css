@@ -900,6 +900,23 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.3rem rgb(234, 84, 51, 0.2);
 }
+.pricing-box {
+  position: relative;
+  overflow: hidden;
+}
+h5 {
+  position: absolute;
+  font-size: 0.6rem;
+  right: 4rem;
+  top: -0.5rem;
+  left: 8rem;
+  width: 3rem;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.3rem 4.5rem;
+  transform: rotate(45deg);
+}
+
 /* faq */
 .faq {
   background-color: var(--secondary);
