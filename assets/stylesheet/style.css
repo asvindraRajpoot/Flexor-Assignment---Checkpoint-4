@@ -323,7 +323,6 @@ a {
   margin-left: 0.2rem;
 }
 
-
 .sub-menu-box {
   position: relative;
 }
@@ -573,8 +572,18 @@ a {
 .clients figure img {
   filter: grayscale(100%);
 }
+.clients {
+  padding: 0.5rem 0;
+}
+.clients figure {
+  margin-left: 3rem;
+}
 .clients figure img:hover {
   filter: unset;
+}
+.image-box {
+  display: -webkit-inline-box;
+  overflow: auto;
 }
 
 /* services section */
@@ -694,6 +703,13 @@ a {
 .owner-details {
   color: var(--white);
 }
+.owner-details {
+  width: 100%;
+}
+.owner-container {
+  display: -webkit-inline-box;
+  overflow: auto;
+}
 .owner-details name {
   font-size: 1.3rem;
   font-weight: bold;
@@ -704,7 +720,7 @@ a {
 .owner-details p {
   font-style: italic;
   margin-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--light-white);
   padding-bottom: 2rem;
 }
@@ -773,7 +789,7 @@ a {
   width: 90%;
 }
 .portfolio-image:hover .portfolio-card-strip {
-  display: flex
+  display: flex;
 }
 
 /* team section */
@@ -1001,7 +1017,7 @@ form .btn {
   align-items: center;
   height: 2.5rem;
   width: 6rem;
-  
+
   justify-content: center;
 }
 
@@ -1026,7 +1042,7 @@ form .btn {
 .foooter-nav {
   justify-content: space-between;
 }
-.foooter-nav  li{
+.foooter-nav li {
   margin-left: 1rem;
 }
 .footer-bottom {
@@ -1094,8 +1110,9 @@ form .btn {
   background-color: var(--primary);
   /* box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro; */
 }
-#toggle,.bars{
-  display: none ;
+#toggle,
+.bars {
+  display: none;
 }
 /* **********************************Mobile view ***********************/
 @media screen and (max-width: 768px) {
@@ -1150,19 +1167,19 @@ form .btn {
   ::placeholder {
     font-size: 1rem;
   }
-  .sm-height{
-      height: 25rem;
+  .sm-height {
+    height: 25rem;
   }
-  .sm-font-size{
-      font-size: 1.5rem;
+  .sm-font-size {
+    font-size: 1.5rem;
   }
-  .sm-padding{
-      padding: 1rem;
+  .sm-padding {
+    padding: 1rem;
   }
-  .sm-cover{
-      object-fit: cover;
+  .sm-cover {
+    object-fit: cover;
   }
- 
+
   .subscribe-btn a {
     height: 2.8rem;
     width: 7rem;
@@ -1259,5 +1276,4 @@ form .btn {
   html {
     font-size: 18px;
   }
-
 }
