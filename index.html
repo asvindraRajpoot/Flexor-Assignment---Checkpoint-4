@@ -12,15 +12,20 @@
     <title>Flexor | Home Page</title>
   </head>
   <body>
-    <header id="top" class="header container padding">
-      <div class="flex space-between item-center">
-        <div class="flex-20 brand">
+    <header id="top" class="header container padding nav-main ">
+      <div class="flex space-between item-center sm-flex-100 header-style ">
+        <div class="flex-20 brand ">
           <a href="index.html">Flexor</a>
         </div>
-        <div class="flex-60">
-          <nav>
-            <ul class="flex space-between text-capitalise">
-              <li>
+
+        <div class="flex-60  sm-flex-10">
+            <label for="toggle">
+                <i class="bars fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox">
+          <nav class="nav-bar">
+            <ul class="flex space-between text-capitalise sm-flex-colom sm-margin-top">
+              <li >
                 <a class="color-primary" href="index.html">home</a>
               </li>
               <li>
@@ -93,9 +98,10 @@
             </ul>
           </nav>
         </div>
+
       </div>
     </header>
-    <section class="hero">
+    <section class="hero sm-margin-top">
       <div class="container padding">
         <h1>Welcome to Flexor</h1>
         <p>We are team of talanted designers making websites with Bootstrap</p>
@@ -111,8 +117,8 @@
       </div>
     </section>
     <section class="learn-more container">
-      <div class="flex space-between item-center boxes">
-        <div class="flex-30 flex colom big-box">
+      <div class="flex space-between item-center boxes sm-flex-colom">
+        <div class="flex-30 flex colom big-box sm-flex-100 sm-border-radious">
           <h2>Why Choose Flexor for your company website?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
@@ -125,25 +131,25 @@
             <i class="fas fa-chevron-right"></i>
           </div>
         </div>
-        <div class="small-box flex colom flex-20">
+        <div class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width ">
           <i class="fas fa-file-alt"></i>
-          <h2>Corporis voluplates <br />sit</h2>
+          <h2>Corporis voluplates sit</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
             consectetur adipisicing.
           </p>
         </div>
-        <div class="small-box flex colom flex-20">
+        <div class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width">
           <i class="fas fa-cube"></i>
-          <h2>Corporis voluplates <br />sit</h2>
+          <h2>Corporis voluplates sit</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
             consectetur adipisicing.
           </p>
         </div>
-        <div class="small-box flex colom flex-20">
+        <div class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width">
           <i class="far fa-images"></i>
-          <h2>Corporis voluplates <br />sit</h2>
+          <h2>Corporis voluplates sit</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
             consectetur adipisicing.
@@ -153,7 +159,7 @@
     </section>
     <section class=" about">
         <div class="container" >
-      <div class="flex flex-100 space-between">
+      <div class="flex flex-100 space-between sm-flex-colom sm-full-width sm-flex-100">
         <figure class="flex-40">
           <img class="full-width" src="assets/media/about-img.jpg" alt="about" />
           <div class="outer-circle flex justify-center item-center">
@@ -251,12 +257,12 @@
     <section class="services">
         <div class="container">
 
-                <div class="text-center flex colom flex-100 service-headings">
+                <div class="text-center flex colom flex-100 service-headings sm-flex-100">
                     <h2>Services</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab id ipsa quidem consectetur commodi voluptas! Quod laudantium distinctio eum modi inventore consectetur aspernatur optio excepturi accusamus veniam? Ipsum, excepturi aperiam.</p>
                 </div>
-                <div class="flex flex-100 space-between service-box-container flex-wrap">
-                    <div class="service-box flex flex-30 colom text-center">
+                <div class="flex flex-100 space-between service-box-container sm-flex-100 flex-wrap">
+                    <div class="service-box flex flex-30 colom text-center sm-full-width sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center" >
                             <i class="fas fa-tv"></i>
                         </div>
@@ -267,7 +273,7 @@
                        </div>
                 
                     </div>
-                    <div class="service-box flex flex-30 colom text-center">
+                    <div class="service-box flex flex-30 colom text-center sm-full-width sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="far fa-chart-bar"></i>
                         </div>
@@ -275,7 +281,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
                     </div>
-                    <div class="service-box flex flex-30 colom text-center">
+                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="fas fa-globe-americas"></i>
                         </div>
@@ -283,7 +289,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
                     </div>
-                    <div class="service-box flex flex-30 colom text-center">
+                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="far fa-image"></i>
                         </div>
@@ -291,7 +297,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
                     </div>
-                    <div class="service-box flex flex-30 colom text-center">
+                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="fas fa-sliders-h"></i>
                         </div>
@@ -299,7 +305,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
                     </div>
-                    <div class="service-box flex flex-30 colom text-center">
+                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="far fa-calendar-alt"></i>
                         </div>
@@ -315,7 +321,7 @@
     </section>
     <section class="goals">
         <div class="container padding">
-            <div class="goals-box flex flex-100 space-between flex-wrap">
+            <div class="goals-box flex flex-100 space-between flex-wrap sm-flex-colom">
                 <figure class="flex flex-45 ">
                     <img class="full-width" src="assets/media/values-1.jpg" alt="values-1">
                     <div class="mission">
@@ -373,8 +379,8 @@
 
     </section>
     <section class="owner">
-        <div class=" container text-center flex ">
-                <div class="owner-details  ">
+        <div class=" container text-center flex  " style="overflow: auto;">
+                <div class="owner-details sm-flex-100 ">
 
                 
                     <figure class="owner-image">
@@ -461,10 +467,10 @@
             <small>web</small>
         </div>
     
-    <div class="flex flex-100 space-between flex-wrap">
+    <div class="flex flex-100 space-between flex-wrap sm-flex-colom">
         <figure class="flex flex-30 portfolio-image">
             <img class="full-width" src="assets/media/portfolio/portfolio-1.jpg" alt="portfolio-1">
-            <div class="portfolio-card-strip flex space-between">
+            <div class="portfolio-card-strip flex space-between item-center">
                 <div class="flex colom item-center justify-center">
                     <h3 class="bold color-brown">Card 1</h3>
                     <small class="flex font-size-8rem">card</small>
@@ -590,8 +596,8 @@
             <h2 class="text-capitalise">team</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
         </div>
-         <div class="flex flex-100 space-between ">
-             <figure class="flex flex-23 colom justify-center item-center text-center team-box">
+         <div class="flex flex-100 space-between sm-flex-colom">
+             <figure class="flex flex-23 colom justify-center item-center text-center team-box sm-margin-top">
                  <img class="full-width" src="assets/media/team/team-1.jpg" alt="team-1">
                  <div class="team-nav flex" >
                      <nav class="full-width">
@@ -617,7 +623,7 @@
                  </div>
 
              </figure>
-             <figure class="flex flex-23 colom justify-center item-center text-center team-box">
+             <figure class="flex flex-23 colom justify-center item-center text-center team-box sm-margin-top">
                 <img class="full-width" src="assets/media/team/team-2.jpg" alt="team-2">
                 <div class="team-nav flex" >
                     <nav class="full-width">
@@ -643,7 +649,7 @@
                 </div>
 
             </figure>
-            <figure class="flex flex-23 colom justify-center item-center text-center team-box">
+            <figure class="flex flex-23 colom justify-center item-center text-center team-box sm-margin-top">
                 <img class="full-width" src="assets/media/team/team-3.jpg" alt="team-3">
                 <div class="team-nav flex" >
                     <nav class="full-width">
@@ -669,7 +675,7 @@
                 </div>
 
             </figure>
-            <figure class="flex flex-23 colom justify-center item-center text-center team-box">
+            <figure class="flex flex-23 colom justify-center item-center text-center team-box sm-margin-top">
                 <img class="full-width" src="assets/media/team/team-4.jpg" alt="team-4">
                 <div class="team-nav flex" >
                     <nav class="full-width">
@@ -700,11 +706,11 @@
     </section>
     <section class="pricing">
         <div class="container">
-            <div class="flex flex-100 colom item-center margin-top text-center">
+            <div class="flex flex-100 colom item-center margin-top text-center sm-flex-colom">
                 <h2 class="text-capitalise">Pricing</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
             </div>
-            <div class="flex flex-100 space-between">
+            <div class="flex flex-100 space-between sm-flex-colom">
                 <div class="pricing-box flex colom flex-23 item-center text-center"> 
                     <h3>Free</h3>
                     <div>
@@ -775,7 +781,7 @@
         <div class="container">
 
        
-        <div class="flex flex-100 colom item-center margin-top text-center">
+        <div class="flex flex-100 colom item-center margin-top text-center sm-flex-colom">
             <h2 class="text-capitalise">F.A.Q.</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
         </div>
@@ -856,7 +862,7 @@
                 <h2 class=" bold color-brown text-capitalise">Contact</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
             </div>
-            <div class="flex flex-100 space-between padding-bottom ">
+            <div class="flex flex-100 space-between padding-bottom sm-flex-colom">
                 <div class="contact-box flex flex-30 padding">
                     <div class="  location flex margin-right">
                       <i class="font-size-1rem fas fa-map-marker-alt"></i>
@@ -892,7 +898,7 @@
                 </div>
             </div>
             <form>
-                <div class="flex flex-100 space-between">
+                <div class="flex flex-100 space-between sm-flex-colom">
                     <input class="flex-45 form-name" type="text" placeholder="Your Name"/>
                     <input class="flex-45 form-email" type="email" placeholder="Your Email"/>
                 </div>
@@ -921,9 +927,9 @@
     <footer class="footer">
         <div class="footer-top">
         <div class="container padding footer-top">
-            <div class="flex flex-100 space-between">
+            <div class="flex flex-100 space-between sm-flex-colom">
 
-                <div class="flex flex-20 colom font-size-5rem">
+                <div class="flex flex-20 colom font-size-5rem sm-flex-100">
                     <h2 class="color-brown">Flexor</h2>
                     <address class="margin-top">
                         A108 Adam Street<br>New York, NY 535022<br>United States
@@ -931,7 +937,7 @@
                     <phone><span class="bold">Phone</span>: +155895548855</phone>
                     <Email><span class="bold">Email</span>: info@example.com</Email>
                 </div>
-                <div class="flex flex-20 colom">
+                <div class="flex flex-20 colom sm-margin-top">
                     <h3 class="bold color-brown">Useful Links</h3>
                     <nav class="font-size-5rem">
                         <ul class="">
@@ -959,7 +965,7 @@
                     </nav>
 
                 </div>
-                <div class="flex flex-20 colom">
+                <div class="flex flex-20 colom sm-margin-top">
                     <h3 class="bold color-brown">Our Services</h3>
                     <nav class="font-size-5rem ">
                         <ul>
@@ -987,7 +993,7 @@
                     </nav>
 
                 </div>
-                <div class="flex flex-40 colom ">
+                <div class="flex flex-40 colom sm-margin-top">
                     <h3 class="bold color-brown">Join Our Newsletter</h3>
                     <p class="font-size-5rem margin-top color-brown light-bold">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                     <div class="margin-top subscribe-btn">
@@ -1001,31 +1007,31 @@
 
         </div>
        </div>
-        <div class="footer-bottom container padding flex flex-100 space-between">
-            <div class="font-size-8rem flex flex-60">
+        <div class="footer-bottom container padding flex flex-100 space-between sm-flex-colom sm-text-center scroll-rel">
+            <div class="font-size-8rem flex flex-60 sm-flex-100 sm-justify-center">
                 <small>&copy; Copyright <span class="bold color-brown">Flexor</span>. All Rights Reserved<br>Designed by <span class="color-primary light-bold">BootstrapMade</span></small>
             </div>
-            <div class="scroll-btn flex  justify-center item-center box-shadow">
+            <div class="scroll-btn flex  justify-center item-center ">
                 <a href="#top">
                     <i class="  top-btn fas fa-arrow-up"></i>
                 
                 </a>
             </div>
-            <nav class="flex flex-15 ">
-                <ul class="flex flex-100 foooter-nav space-between">
-                    <li class="icon-circle">
+            <nav class="flex flex-15 sm-flex-100 sm-margin-top">
+                <ul class="flex flex-100 foooter-nav space-between sm-item-center sm-justify-center">
+                    <li class="icon-circle sm-margin-small">
                         <i class="fab fa-twitter"></i>
                     </li>
-                    <li class="icon-circle">
+                    <li class="icon-circle sm-margin-small">
                         <i class="fab fa-facebook-f"></i>
                     </li>
-                    <li class="icon-circle">
+                    <li class="icon-circle sm-margin-small">
                         <i class="fab fa-instagram"></i>
                     </li>
-                    <li class="icon-circle">
+                    <li class="icon-circle sm-margin-small">
                         <i class="fab fa-skype"></i>
                     </li>
-                    <li class="icon-circle">
+                    <li class="icon-circle sm-margin-small">
                         <i class="fab fa-linkedin-in"></i>
                     </li>
                 </ul>
