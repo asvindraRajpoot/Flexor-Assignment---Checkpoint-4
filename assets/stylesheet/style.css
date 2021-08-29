@@ -1,0 +1,1090 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Generic Styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 1.8rem;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --primary: #ea5433;
+  --secondary: #fef9f7;
+  --white: #ffffff;
+  --light-white: #d8d8d7;
+  --brown: #635551;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.flex {
+  display: flex;
+}
+.flex-100 {
+  flex: 0 1 100%;
+}
+.flex-90 {
+  flex: 0 1 90%;
+}
+.flex-80 {
+  flex: 0 1 80%;
+}
+.flex-70 {
+  flex: 0 1 70%;
+}
+.flex-60 {
+  flex: 0 1 60%;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-45 {
+  flex: 0 1 49%;
+}
+.flex-40 {
+  flex: 0 1 40%;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+.flex-23 {
+  flex: 0 1 23%;
+}
+.flex-20 {
+  flex: 0 1 20%;
+}
+.flex-15 {
+  flex: 0 1 15%;
+}
+.flex-10 {
+  flex: 0 1 10%;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.colom {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.item-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalise {
+  text-transform: capitalize;
+}
+.font-size-1rem {
+  font-size: 1.2rem;
+}
+.font-size-2rem {
+  font-size: 2rem;
+}
+.font-size-5rem {
+  font-size: 0.9rem;
+}
+.font-size-8rem {
+  font-size: 0.8rem;
+}
+.color-ultra-light {
+  color: #c2bdbd;
+}
+.color-primary {
+  color: var(--primary);
+}
+.color-light-primary {
+  color: rgb(234, 84, 51, 0.6);
+}
+.color-brown {
+  color: var(--brown);
+}
+.bold {
+  font-weight: bold;
+}
+.light-bold {
+  font-weight: 600;
+}
+.strike-thorugh {
+  text-decoration: line-through;
+}
+.box-shadow {
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro;
+}
+
+.btn {
+  width: 1.5rem;
+  height: 1rem;
+  padding: 1rem;
+  background-color: var(--primary);
+}
+.full-width {
+  width: 100%;
+}
+.padding {
+  padding: 2rem;
+}
+.margin-top {
+  margin-top: 1rem;
+}
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+.margin-left {
+  margin-left: 1rem;
+}
+.margin-right {
+  margin-right: 1rem;
+}
+.margin-right-ponit-5 {
+  margin-right: 0.5rem;
+}
+.dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+/* Custom Styles */
+
+/* header */
+
+.header .brand a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--brown);
+}
+.header nav a,
+.header nav li {
+  font-weight: bold;
+  color: var(--brown);
+  font-size: 0.8rem;
+}
+.header nav .drop-down i {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-left: 0.2rem;
+}
+
+.sub-menu-box {
+  position: relative;
+}
+.sub-menu li a {
+  display: inline-block;
+  width: 7rem;
+}
+.sub-menu {
+  position: absolute;
+  /* width: 2rem; */
+  background-color: var(--secondary);
+  padding: 1rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
+  transform: translateX(-75%);
+  display: none;
+}
+.sub-menu-box:hover .sub-menu {
+  display: inline-block;
+  top: 1.3rem;
+}
+.sub-sub-menu-box {
+  position: relative;
+}
+
+.sub-sub-menu {
+  position: absolute;
+  /* width: 2rem; */
+  background-color: var(--secondary);
+  padding: 1rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
+  transform: translateX(15%);
+  display: none;
+}
+.sub-sub-menu-box:hover .sub-sub-menu {
+  display: inline-block;
+  top: -2.2rem;
+}
+.drop-down-2 {
+  margin-left: 2rem;
+}
+.header a:hover {
+  color: var(--primary);
+}
+/* hero section */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../media/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  color: var(--white);
+  font-weight: bold;
+  margin-top: 8rem;
+}
+.hero p {
+  font-size: 1.4rem;
+  color: var(--light-white);
+  margin-bottom: 2.8rem;
+}
+.right-arrow-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 0.7rem;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  bottom: 1.8rem;
+  right: 10%;
+  padding: 1.2rem;
+}
+.start-button {
+  background-color: rgb(88, 75, 71, 0.4);
+  max-width: fit-content;
+  padding: 0.5rem 1.8rem;
+  color: var(--white);
+  border-radius: 2rem;
+  position: relative;
+}
+.start-button a {
+  color: var(--white);
+  font-size: 0.7rem;
+  margin-left: 1.5rem;
+}
+.arrow-box {
+  padding-bottom: 18rem;
+}
+.arrow-box:hover .right-arrow-circle {
+  background-color: rgb(88, 75, 71, 0.9);
+}
+.start-button:hover {
+  background-color: var(--primary);
+}
+.learn-more-btn a {
+  margin-left: 0;
+  padding: 0.6rem 1rem;
+}
+.learn-more-btn i {
+  font-size: 0.5rem;
+}
+.learn-more-btn {
+  margin-top: 1.4rem;
+  background-color: #da8366;
+  align-self: center;
+}
+.learn-more-btn:hover {
+  background-color: #d8d8d7;
+  color: var(--white);
+}
+.big-box {
+  background-color: var(--primary);
+  padding: 1.7rem;
+}
+.big-box h2 {
+  color: var(--white);
+  font-weight: bold;
+}
+.big-box p {
+  color: var(--secondary);
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.small-box {
+  background-color: var(--white);
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem gainsboro;
+  padding: 1.2rem;
+  text-align: center;
+  height: 15rem;
+  border-radius: 1rem;
+}
+.small-box h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1.8rem 0;
+}
+.small-box p {
+  font-size: 0.8rem;
+  color: var(--brown);
+}
+.small-box i {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+.boxes {
+  margin-top: -8rem;
+
+  z-index: 1;
+}
+/* about section */
+.about {
+  background-color: var(--secondary);
+  margin-top: 2rem;
+  padding: 2.3rem;
+}
+.about figure img {
+  height: 100%;
+  object-fit: cover;
+}
+.about figure {
+  position: relative;
+}
+.inner-circle i {
+  color: var(--white);
+  font-size: 0.8rem;
+}
+.inner-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+  padding: 1.6rem;
+}
+.outer-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgb(221, 157, 134, 0.5);
+  padding: 2.4rem;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+}
+
+.about .fingerprint {
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.16rem solid #f7cebf;
+  padding: 1.5rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.about-content {
+  align-self: center;
+  padding: 2rem 0;
+}
+.about-content small {
+  font-size: 0.9rem;
+  color: var(--brown);
+}
+.about-content h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--brown);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.about-content p {
+  font-size: 0.8rem;
+  color: var(--brown);
+  margin-bottom: 3rem;
+}
+.fingerprint-box h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+.fingerprint:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.clients figure img {
+  color: var(--secondary);
+}
+
+.dot-2 {
+  background-color: var(--light-white);
+  margin-left: 0.8rem;
+}
+
+.clients figure img {
+  filter: grayscale(100%);
+}
+.clients figure img:hover {
+  filter: unset;
+}
+
+/* services section */
+.services {
+  background-color: var(--secondary);
+  padding: 3rem 0;
+}
+.service-headings h2 {
+  font-weight: bold;
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+.service-headings p {
+  font-size: 1rem;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+.service-box {
+  background-color: var(--white);
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro;
+  margin-top: 2.8rem;
+  height: 11rem;
+}
+.service-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+  color: var(--white);
+  align-self: center;
+  background-color: var(--primary);
+  margin-top: -1.5rem;
+  border: 0.16rem solid var(--primary);
+}
+.service-box h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.service-box p {
+  font-size: 0.8rem;
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+.service-box-container {
+  margin-top: 1rem;
+}
+.service-icon:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
+.service-box:hover {
+  color: var(--primary);
+}
+/* goals section */
+
+.goals-box figure {
+  position: relative;
+  margin-top: 1rem;
+}
+.goals-box figure img {
+  border-radius: 0.5rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.mission {
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  margin: 1.2rem 1.2rem;
+}
+.mission h3 {
+  font-weight: bold;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+.mission p {
+  color: var(--brown);
+}
+.mission span {
+  font-size: 0.7rem;
+  color: var(--brown);
+}
+.mission span i {
+  font-size: 0.7rem;
+}
+.mission:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.mission:hover :nth-child(n) {
+  color: white;
+}
+
+/* owner section */
+.owner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../media/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.owner-image img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 0.4rem solid rgba(228, 222, 222, 0.1);
+  object-fit: cover;
+}
+.owner-image {
+  margin-top: 7rem;
+}
+.owner-details {
+  color: var(--white);
+}
+.owner-details name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.owner-details small {
+  color: var(--light-white);
+}
+.owner-details p {
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--light-white);
+  padding-bottom: 2rem;
+}
+.dots {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.owner-dots {
+  margin: 0 0.3rem;
+  background-color: var(--light-white);
+}
+.active {
+  background-color: var(--primary);
+}
+/* portfolio section */
+.portfolio h2 {
+  font-weight: bold;
+  color: var(--brown);
+  margin-top: 1rem;
+}
+.portfolio p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: var(--brown);
+}
+.portfolio .tabs {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.portfolio .tabs small {
+  margin: 0 1rem;
+
+  color: var(--brown);
+
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.portfolio figure {
+  margin: 1rem 0;
+}
+.tabs small:hover {
+  color: var(--primary);
+  background-color: #fcf1ec;
+}
+.portfolio-card-strip small {
+  width: 3rem;
+  justify-content: flex-start;
+  margin-left: 0.3rem;
+}
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio-card-strip {
+  width: 90%;
+  padding: 0.6rem;
+
+  bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(255, 255, 255, 0.6);
+  position: absolute;
+  display: none;
+}
+.portfolio-image:hover .portfolio-card-strip {
+  display: unset;
+}
+
+/* team section */
+.team {
+  background-color: var(--secondary);
+  padding: 2.5rem;
+}
+.team h2 {
+  font-weight: bold;
+  color: var(--brown);
+  padding-top: 1rem;
+}
+.team p {
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+.bio name {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: var(--brown);
+}
+.bio strong {
+  display: block;
+
+  font-size: 0.7rem;
+  color: var(--brown);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.team-box {
+  background-color: var(--white);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem gainsboro;
+}
+.team figure {
+  border-radius: 0.5rem;
+  position: relative;
+}
+.team figure img {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.team-nav {
+  background-color: rgb(255, 255, 255, 0.6);
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: absolute;
+  bottom: 5rem;
+  display: none;
+}
+.team-box:hover .team-nav {
+  display: unset;
+}
+/* pricing */
+.pricing h2 {
+  font-weight: bold;
+  color: var(--brown);
+  padding-top: 1rem;
+}
+.pricing p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: var(--brown);
+}
+.pricing .pricing-box {
+  background-color: var(--white);
+  border: 0.1rem solid #f8f8f8;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pricing-box h3,
+.buy-btn {
+  background-color: #f8f8f8;
+  width: 100%;
+  color: var(--brown);
+  padding: 1rem;
+}
+
+.pricing-box p {
+  font-size: 0.8rem;
+  color: var(--brown);
+}
+.pricing-box p {
+  line-height: 2rem;
+}
+.pricing-box a {
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 0.5rem 2rem;
+  font-size: 0.7rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgb(234, 84, 51, 0.2);
+}
+.pricing-box a:hover {
+  background-color: #ce6a54;
+  color: white;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro;
+}
+.pricing-box .business {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgb(234, 84, 51, 0.2);
+}
+/* faq */
+.faq {
+  background-color: var(--secondary);
+}
+.faq h2 {
+  font-weight: bold;
+  color: var(--brown);
+  margin-top: 1.5rem;
+}
+.faq p {
+  margin: 1rem 0;
+  color: var(--brown);
+}
+.faq-box {
+  background-color: var(--white);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+/* contact section */
+.contact h2 {
+  margin: 1rem 0;
+}
+.contact-box {
+  background-color: var(--white);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem gainsboro;
+  margin-top: 3rem;
+}
+.contact-box .location {
+  justify-content: center;
+  align-items: center;
+}
+.contact-box .location {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.1rem dashed var(--primary);
+  color: var(--primary);
+  align-self: center;
+  /* background-color: var(--primary); */
+  padding: 1.5rem;
+}
+.contact-box address {
+  font-size: 0.9rem;
+  color: var(--brown);
+  margin-top: 1rem;
+}
+.contact-box .location:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+/* form */
+form {
+  padding: 1rem;
+  background-color: var(--white);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem gainsboro;
+  padding-bottom: 2rem;
+}
+form input,
+form textarea {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 0.1rem solid gainsboro;
+  outline: none;
+}
+::placeholder {
+  color: var(--light-white);
+}
+.send-button {
+  margin-top: 2rem;
+}
+.send-button .btn:hover {
+  background-color: #ea5433;
+  color: white;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro;
+}
+form .btn {
+  margin-top: 1rem;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.7rem 1rem;
+}
+/* footer  */
+.footer .footer-top{
+  background-color: var(--secondary);
+  margin-top: 2rem;
+}
+.subscribe-btn {
+  position: relative;
+}
+.subscribe-btn input {
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: 0;
+  border: 0.1rem solid #ec805c;
+  outline: none;
+}
+.subscribe-btn .btn {
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  bottom: 0.5rem;
+  width: 6.9rem;
+  height: 2.7rem;
+}
+.subscribe-btn a {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  align-self: center;
+  align-items: center;
+  height: 4rem;
+  justify-content: center;
+}
+
+.subcription:hover {
+  background-color: rgba(252, 46, 0, 0.9);
+  color: white;
+}
+.subscribe-btn input:hover {
+  box-shadow: inset 0.1rem 0.1rem 0.6rem 0.3rem rgb(234, 84, 51, 0.2);
+}
+/* footer-bottom */
+.icon-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foooter-nav {
+  justify-content: space-between;
+}
+.foooter-nav ul li {
+  margin-left: 2rem;
+}
+.footer-bottom{
+    position: relative;
+}
+
+/*                                   hero-blog Page Designing */
+.hero-blog {
+  background-color: #eeeae8;
+}
+.hero-blog h1 {
+  font-size: 2rem;
+}
+.header .brand a {
+  font-size: 2rem;
+}
+.hero-blog{
+    padding: 1rem 0rem;
+}
+.blog .blog-content {
+  padding: 1rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.blog .blog-article {
+  margin-top: 2rem;
+}
+.blog-content p {
+  margin-bottom: 4.5rem;
+}
+.blog-content name {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+.read-more {
+  margin-top: 1rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+}
+.read-more a {
+  padding: 0.5rem 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+.read-more:hover a {
+  background-color: #ec805c;
+  color: white;
+}
+
+
+/* scrolling btn */
+
+.top-btn{
+   
+   position: fixed;
+   bottom: 0;
+   left: 50%;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: var(--brown);
+    color: white;
+}
+.top-btn:hover{
+    background-color: var(--primary);
+    /* box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro; */
+    
+    
+}
