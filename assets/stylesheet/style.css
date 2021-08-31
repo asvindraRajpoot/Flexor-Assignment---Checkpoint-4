@@ -689,6 +689,7 @@ a {
     url(../media/testimonials-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .owner-image img {
   width: 8rem;
@@ -699,6 +700,7 @@ a {
 }
 .owner-image {
   margin-top: 7rem;
+  
 }
 .owner-details {
   color: var(--white);
@@ -1293,4 +1295,8 @@ form .btn {
   html {
     font-size: 18px;
   }
+}
+
+.bars{
+  display:none;
 }
