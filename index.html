@@ -12,41 +12,42 @@
     <title>Flexor | Home Page</title>
   </head>
   <body>
-    <header id="top" class="header container padding nav-main ">
-      <div class="flex space-between item-center sm-flex-100 header-style ">
-        <div class="flex-20 brand ">
+      <main>
+    <header id="top" class="header container padding nav-main sm-conntainer">
+      <div class="flex space-between item-center  header-style ">
+        <div class="flex-20 brand font-size-5rem">
           <a href="index.html">Flexor</a>
         </div>
 
-        <div class="flex-60  sm-flex-10">
+        <div class="flex-60">
             <label for="toggle">
                 <i class="bars fas fa-bars"></i>
             </label>
             <input id="toggle" type="checkbox">
           <nav class="nav-bar">
             <ul class="flex space-between text-capitalise sm-flex-colom sm-margin-top">
-              <li >
+              <li class="nav-font-size">
                 <a class="color-primary" href="index.html">home</a>
               </li>
-              <li>
+              <li  class="nav-font-size">
                 <a href="#">about</a>
               </li>
-              <li>
+              <li  class="nav-font-size">
                 <a href="#">services</a>
               </li>
-              <li>
+              <li  class="nav-font-size">
                 <a href="#">portfolio</a>
               </li>
-              <li>
+              <li  class="nav-font-size">
                 <a href="#">team</a>
               </li>
-              <li>
+              <li  class="nav-font-size">
                 <a href="#">pricing</a>
               </li>
-              <li>
+              <li  class="nav-font-size">
                 <a href="blog.html">blog</a>
               </li>
-              <li class="sub-menu-box">
+              <li class="sub-menu-box  nav-font-size">
                 <a class="drop-down" href="#">
                   <span> drop down</span>
 
@@ -54,11 +55,11 @@
                 </a>
 
                 <ul class="sub-menu">
-                  <li>
+                  <li class="main-list">
                     <a href="#">Drop Down 1</a>
                   </li>
-                  <li class="sub-sub-menu-box">
-                    <a class="flex drop-down" href="#">
+                  <li class="main-list sub-sub-menu-box">
+                    <a class="flex drop-down-2" href="#">
                       <span> drop down 2</span>
 
                       <i class="margin-left fas fa-chevron-right"></i>
@@ -81,13 +82,13 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="main-list">
                     <a href="#">Drop Down 3</a>
                   </li>
-                  <li>
+                  <li class="main-list">
                     <a href="#">Drop Down 4</a>
                   </li>
-                  <li>
+                  <li class="main-list">
                     <a href="#">Drop Down 5</a>
                   </li>
                 </ul>
@@ -102,9 +103,9 @@
       </div>
     </header>
     <section class="hero sm-margin-top">
-      <div class="container padding">
-        <h1>Welcome to Flexor</h1>
-        <p>We are team of talanted designers making websites with Bootstrap</p>
+      <div class="container padding sm-font-size-2rem">
+        <h1 class="sm-font-size-2rem">Welcome to Flexor</h1>
+        <p class="sm-font-size">We are team of talanted designers making websites with Bootstrap</p>
 
         <div class="flex arrow-box">
           <div class="start-button flex item-center">
@@ -118,9 +119,9 @@
     </section>
     <section class="learn-more container">
       <div class="flex space-between item-center boxes sm-flex-colom">
-        <div class="flex-30 flex colom big-box sm-flex-100 sm-border-radious">
-          <h2>Why Choose Flexor for your company website?</h2>
-          <p>
+        <article class="flex-30 flex colom big-box sm-flex-100 sm-border-radious">
+          <h2 >Why Choose Flexor for your company website?</h2>
+          <p >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
             facilis. Necessitatibus ad at odio ut, reiciendis dolorem dolor
             repellendus repellat odit praesentium sed sequi expedita magni
@@ -130,92 +131,93 @@
             <a href="#">Learn More</a>
             <i class="fas fa-chevron-right"></i>
           </div>
-        </div>
-        <div class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width ">
+        </article>
+        <article class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width ">
           <i class="fas fa-file-alt"></i>
-          <h2>Corporis voluplates sit</h2>
+          <h2 class="">Corporis voluplates sit</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
             consectetur adipisicing.
           </p>
-        </div>
-        <div class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width">
+        </article>
+        <article class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width">
           <i class="fas fa-cube"></i>
-          <h2>Corporis voluplates sit</h2>
+          <h2 >Corporis voluplates sit</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
             consectetur adipisicing.
           </p>
-        </div>
-        <div class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width">
+        </article>
+        <article class="small-box flex colom flex-20 sm-flex-100 sm-margin-top sm-full-width">
           <i class="far fa-images"></i>
           <h2>Corporis voluplates sit</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
             consectetur adipisicing.
           </p>
-        </div>
+        </article>
       </div>
     </section>
     <section class=" about">
-        <div class="container" >
+    <div class="container" >
       <div class="flex flex-100 space-between sm-flex-colom sm-full-width sm-flex-100">
-        <figure class="flex-40">
-          <img class="full-width" src="assets/media/about-img.jpg" alt="about" />
-          <div class="outer-circle flex justify-center item-center">
-              <div class="inner-circle flex justify-center item-center">
-                <i class="fas fa-play"></i>
-              </div>
-          </div>
-        </figure>
-        <div class="flex colom flex-50  about-content">
-          <small>About us</small>
-          <h2>Enim quis est voluplates aliquid consectetur fugiat</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            pariatur reiciendis assumenda quas iste corrupti tenetur error
-            similique! Natus voluptatem laboriosam fugit nemo non odio harum?
-            Tempore explicabo nesciunt possimus.
-          </p>
-          <div class="flex space-between flex-100 fingerprint-box">
-              <div class="flex  fingerprint  item-center justify-center">
-                <i class="fas fa-fingerprint"></i>
-              </div>
-              <div class="flex-90">
-                  <h3>Lorem Ipsum</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                    <figure class="flex-40">
+                    <img class="full-width" src="assets/media/about-img.jpg" alt="about" />
+                    <div class="outer-circle flex justify-center item-center">
+                        <div class="inner-circle flex justify-center item-center">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    </figure>
+      <article class="flex colom flex-50  about-content">
+                <strong>About us</strong>
+                <h2>Enim quis est voluplates aliquid consectetur fugiat</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
                     pariatur reiciendis assumenda quas iste corrupti tenetur error
-                    similique! Natus</p>
-              </div>
-          </div>
-          <div class="flex space-between flex-100 fingerprint-box">
-            <div class="flex  fingerprint  item-center justify-center">
-                <i class="fas fa-gift"></i>
-            </div>
-            <div class="flex-90">
-                <h3>Nemo Enim</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                  pariatur reiciendis assumenda quas iste corrupti tenetur error
-                  similique! Natus</p>
-            </div>
-        </div>
-        <div class="flex space-between flex-100 fingerprint-box">
-            <div class="flex  fingerprint  item-center justify-center">
-                <i class="fas fa-atom"></i>
-            </div>
-            <div class="flex-90">
-                <h3>Dine Pad</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                  pariatur reiciendis assumenda quas iste corrupti tenetur error
-                  similique! Natus</p>
-            </div>
-        </div>
-        </div>
+                    similique! Natus voluptatem laboriosam fugit nemo non odio harum?
+                    Tempore explicabo nesciunt possimus.
+                </p>
+          <article class="flex space-between flex-100 fingerprint-box">
+                        <div class="flex  fingerprint  item-center justify-center">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <div class="flex-90">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                                pariatur reiciendis assumenda quas iste corrupti tenetur error
+                                similique! Natus</p>
+                        </div>
+          </article>
+          <article class="flex space-between flex-100 fingerprint-box">
+                    <div class="flex  fingerprint  item-center justify-center">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="flex-90">
+                        <h3>Nemo Enim</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        pariatur reiciendis assumenda quas iste corrupti tenetur error
+                        similique! Natus</p>
+                    </div>
+          </article>
+         <article class="flex space-between flex-100 fingerprint-box">
+                    <div class="flex  fingerprint  item-center justify-center">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="flex-90">
+                        <h3>Dine Pad</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        pariatur reiciendis assumenda quas iste corrupti tenetur error
+                        similique! Natus</p>
+                    </div>
+          </article>
+      </article>
       </div>
+    </div>
     </section>
-  </div>
-    <section class="container clients  ">
-        <div class=" flex  padding item-center  image-box">
+  
+    <section class=" clients  ">
+        <div class=" sm-container flex  padding item-center  image-box sm-overflow">
             <figure class="flex-20">
                 <img class="full-width" src="assets/media/clients/client-1.png" alt="clinet-1">
             </figure>
@@ -257,12 +259,12 @@
     <section class="services">
         <div class="container">
 
-                <div class="text-center flex colom flex-100 service-headings sm-flex-100">
+                <article class="text-center flex colom flex-100 service-headings sm-flex-100">
                     <h2>Services</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab id ipsa quidem consectetur commodi voluptas! Quod laudantium distinctio eum modi inventore consectetur aspernatur optio excepturi accusamus veniam? Ipsum, excepturi aperiam.</p>
-                </div>
+                </article>
                 <div class="flex flex-100 space-between service-box-container sm-flex-100 flex-wrap">
-                    <div class="service-box flex flex-30 colom text-center sm-full-width sm-flex-100 sm-padding-left-right">
+                    <article class="service-box flex flex-30 colom text-center sm-full-width sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center" >
                             <i class="fas fa-tv"></i>
                         </div>
@@ -272,47 +274,47 @@
                         </p>   
                        </div>
                 
-                    </div>
-                    <div class="service-box flex flex-30 colom text-center sm-full-width sm-flex-100 sm-padding-left-right">
+                    </article>
+                    <article class="service-box flex flex-30 colom text-center sm-full-width sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="far fa-chart-bar"></i>
                         </div>
                         <h3>dolor sitema</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
-                    </div>
-                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
+                    </article>
+                    <article class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="fas fa-globe-americas"></i>
                         </div>
                         <h3>sed ut perspiciatis</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
-                    </div>
-                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
+                    </article>
+                    <article class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="far fa-image"></i>
                         </div>
                         <h3>magni dolores</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
-                    </div>
-                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
+                    </article>
+                    <article class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="fas fa-sliders-h"></i>
                         </div>
                         <h3>nemo enim</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
-                    </div>
-                    <div class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
+                    </article>
+                    <article class="service-box flex flex-30 colom text-center sm-flex-100 sm-padding-left-right">
                         <div class="service-icon flex justify-center item-center">
                             <i class="far fa-calendar-alt"></i>
                         </div>
                         <h3>eiusmod tempor</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur ut voluptatem quia quasi dolore fugiat quo 
                         </p>   
-                    </div>
+                    </article>
                     
                     
                 </div>
@@ -329,46 +331,47 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  dignissimos nemo ad, labore ipsa laudantium .</p>
                          <span>
                             <i class="fas fa-arrow-right"></i>
-                            <small>Read More</small>
+                            <a class="color-brown" href="#">Read More</a>
                          </span>
     
                     </div>
                 </figure>
                 <figure class="flex flex-45 ">
                     <img class="full-width" src="assets/media/values-2.jpg" alt="values-2">
-                    <div class="mission">
+                    <article class="mission">
                         <h3 class="text-center text-capitalise">Our plan</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  dignissimos nemo ad, labore ipsa laudantium .</p>
                          <span>
                             <i class="fas fa-arrow-right"></i>
-                            <small>Read More</small>
+                            <a class="color-brown" href="#">Read More</a>
                          </span>
     
-                    </div>
+                    </article>
                 </figure>
                 <figure class="flex flex-45 ">
                     <img class="full-width" src="assets/media/values-3.jpg" alt="values-3">
-                    <div class="mission">
+                    <article class="mission">
                         <h3 class="text-center text-capitalise">Our vision</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  dignissimos nemo ad, labore ipsa laudantium .</p>
                          <span>
                             <i class="fas fa-arrow-right"></i>
-                            <small>Read More</small>
+                            <a class="color-brown" href="#">Read More</a>
                          </span>
     
-                    </div>
+                    </article>
                 </figure>
                 <figure class="flex flex-45 ">
                     <img class="full-width" src="assets/media/values-4.jpg" alt="values-4">
-                    <div class="mission">
+
+                    <article class="mission">
                         <h3 class="text-center text-capitalise">Our care</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  dignissimos nemo ad, labore ipsa laudantium .</p>
                          <span>
                             <i class="fas fa-arrow-right"></i>
-                            <small>Read More</small>
+                            <a class="color-brown" href="#">Read More</a>
                          </span>
     
-                    </div>
+                    </article>
                 </figure>
                
              
@@ -379,67 +382,67 @@
 
     </section>
     <section class="owner flex-100">
-        <div class="  text-center owner-container">
-                <div class="owner-details sm-flex-100 ">
+        <div class="  sm-container  text-center owner-container full-width">
+                <article class="owner-details sm-flex-100 ">
 
                 
                     <figure class="owner-image">
                         <img class="" src="assets/media/testimonials/testimonials-3.jpg" alt="testimonials-3">
                     </figure>
-                    <name>Jena Karlis<br></name>
+                    <strong>Jena Karlis<br></strong>
                     <small>Store Owner<br></small>
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur eius ullam animi nobis culpa quibusdam impedit ratione quisquam iste,<br> dignissimos eaque eveniet
                         ad ea, harum asperiores."
                     </p>
-                </div>
-                <div class="owner-details">
+                </article>
+                <article class="owner-details full-width">
 
                 
                     <figure class="owner-image">
                         <img class="" src="assets/media/testimonials/testimonials-1.jpg" alt="testimonials-1">
                     </figure>
-                    <name>Jena Karlis<br></name>
+                    <strong>Jena Karlis<br></strong>
                     <small>Store Owner<br></small>
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur eius ullam animi nobis culpa quibusdam impedit ratione quisquam iste,<br> dignissimos eaque eveniet
                         ad ea, harum asperiores."
                     </p>
-                </div>
-                <div class="owner-details">
+                </article>
+                <article class="owner-details">
 
                 
                     <figure class="owner-image">
                         <img class="" src="assets/media/testimonials/testimonials-2.jpg" alt="testimonials-2">
                     </figure>
-                    <name>Jena Karlis<br></name>
+                    <strong>Jena Karlis<br></strong>
                     <small>Store Owner<br></small>
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur eius ullam animi nobis culpa quibusdam impedit ratione quisquam iste, <br>dignissimos eaque eveniet
                         ad ea, harum asperiores."
                     </p>
-                </div>
-                <div class="owner-details">
+                </article>
+                <article class="owner-details">
 
                 
                     <figure class="owner-image">
                         <img class="" src="assets/media/testimonials/testimonials-4.jpg" alt="testimonials-4">
                     </figure>
-                    <name>Jena Karlis<br></name>
+                    <strong>Jena Karlis<br></strong>
                     <small>Store Owner<br></small>
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur eius ullam animi nobis culpa quibusdam impedit ratione quisquam iste, <br>dignissimos eaque eveniet
                         ad ea, harum asperiores."
                     </p>
-                </div>
-                <div class="owner-details">
+                </article>
+                <article class="owner-details">
 
                 
                     <figure class="owner-image">
                         <img class="" src="assets/media/testimonials/testimonials-5.jpg" alt="testimonials-5">
                     </figure>
-                    <name>Jena Karlis<br></name>
+                    <strong>Jena Karlis<br></strong>
                     <small>Store Owner<br></small>
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur eius ullam animi nobis culpa quibusdam impedit ratione quisquam iste,<br> dignissimos eaque eveniet
                         ad ea, harum asperiores."
                     </p>
-                </div>
+                </article>
                 
                 
 
@@ -455,13 +458,13 @@
 
     </section>
     <section class="portfolio">
-        <div class="text-center container flex flex-100 colom">
+        <article class="text-center container flex flex-100 colom">
 
       
         <h2>Portfolio</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque sequi quam eligendi placeat cum. Dignissimos culpa, aspernatur dolor expedita, qui similique blanditiis excepturi vel omnis ad iste a veritatis numquam!</p>
         <div class="tabs text-uppercase flex justify-center">
-            <small>all</small>
+            <small class="tabs-color">all</small>
             <small>app</small>
             <small>card</small>
             <small>web</small>
@@ -592,10 +595,10 @@
         <div class="container">
 
       
-        <div class="flex flex-100 colom item-center margin-top text-center">
+        <article class="flex flex-100 colom item-center margin-top text-center">
             <h2 class="text-capitalise">team</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
-        </div>
+        </article>
          <div class="flex flex-100 space-between sm-flex-colom">
              <figure class="flex flex-23 colom justify-center item-center text-center team-box sm-margin-top">
                  <img class="full-width" src="assets/media/team/team-1.jpg" alt="team-1">
@@ -603,22 +606,26 @@
                      <nav class="full-width">
                          <ul class="flex space-between">
                             <li class="">
-                                <i class="fab fa-twitter"></i>
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                               
                             </li>
                             <li class="">
-                                <i class="fab fa-facebook-f"></i>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                
                             </li>
                             <li class="">
-                                <i class="fab fa-instagram"></i>
+                                <a href="#">  <i class="fab fa-instagram"></i></a>
+                              
                             </li>
                             <li class="">
-                                <i class="fab fa-linkedin"></i>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                
                             </li>
                          </ul>
                      </nav>
                  </div>
                  <div class="bio">
-                     <name>Walter White<br></name>
+                     <span>Walter White<br></span>
                      <strong>Chief Executive Officer</strong>
                  </div>
 
@@ -628,23 +635,27 @@
                 <div class="team-nav flex" >
                     <nav class="full-width">
                         <ul class="flex space-between">
-                           <li class="">
-                               <i class="fab fa-twitter"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-facebook-f"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-instagram"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-linkedin"></i>
-                           </li>
+                            <li class="">
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                               
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                
+                            </li>
+                            <li class="">
+                                <a href="#">  <i class="fab fa-instagram"></i></a>
+                              
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                
+                            </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="bio">
-                    <name>Sarah Jhonson</H1><br></name>
+                    <span>Sarah Jhonson</H1><br></span>
                     <strong>Product Manager</strong>
                 </div>
 
@@ -654,23 +665,27 @@
                 <div class="team-nav flex" >
                     <nav class="full-width">
                         <ul class="flex space-between">
-                           <li class="">
-                               <i class="fab fa-twitter"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-facebook-f"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-instagram"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-linkedin"></i>
-                           </li>
+                            <li class="">
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                               
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                
+                            </li>
+                            <li class="">
+                                <a href="#">  <i class="fab fa-instagram"></i></a>
+                              
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                
+                            </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="bio">
-                    <name>William Anderson<br></name>
+                    <span>William Anderson<br></span>
                     <strong>CTO</strong>
                 </div>
 
@@ -680,23 +695,27 @@
                 <div class="team-nav flex" >
                     <nav class="full-width">
                         <ul class="flex space-between">
-                           <li class="">
-                               <i class="fab fa-twitter"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-facebook-f"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-instagram"></i>
-                           </li>
-                           <li class="">
-                               <i class="fab fa-linkedin"></i>
-                           </li>
+                            <li class="">
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                               
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                
+                            </li>
+                            <li class="">
+                                <a href="#">  <i class="fab fa-instagram"></i></a>
+                              
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                
+                            </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="bio">
-                    <name>Amanda Jepson<br></name>
+                    <span>Amanda Jepson<br></span>
                     <strong>Accountant</strong>
                 </div>
 
@@ -706,18 +725,24 @@
     </section>
     <section class="pricing">
         <div class="container">
-            <div class="flex flex-100 colom item-center margin-top text-center sm-flex-colom">
+            <article class="flex flex-100 colom item-center margin-top text-center sm-flex-colom">
                 <h2 class="text-capitalise">Pricing</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
-            </div>
+            </article>
             <div class="flex flex-100 space-between sm-flex-colom">
                 <div class="pricing-box flex colom flex-23 item-center text-center"> 
                     <h3>Free</h3>
                     <div>
                         <h4> <span class="bold color-primary font-size-5rem">$</span> <span class="font-size-2rem bold  color-primary span">0</span> <span class="color-ultra-light">/ month</span></h4>
-                        <p>Alda dere<br>Nec feugiat nisi<br>Nulla at volutpat<br>
-                       <span class="color-ultra-light strike-thorugh">Pharetra massa<br>Massa ultiricies mi</span> 
-                        </p>
+                        <nav>
+                            <ul class="">
+                                <li>Alda dere </li>
+                                <li>Nec feugiat nisi</li>
+                                <li>Nulla at volutpat</li>
+                                <li class=" strike-thorugh color">Pharetra massa</li>
+                                <li class="color strike-thorugh">Massa ultiricies mi</li>
+                            </ul>
+                        </nav>
                         
                     </div>
                     <div class="buy-btn">
@@ -730,9 +755,15 @@
                     <h3 class="business">Business</h3>
                     <div>
                         <h4> <span class="bold color-primary font-size-5rem">$</span> <span class="font-size-2rem bold  color-primary span">19</span> <span class="color-ultra-light">/ month</span></h4>
-                        <p>Alda dere<br>Nec feugiat nisi<br>Nulla at volutpat<br>
-                       Pharetra massa<br> <span class="color-ultra-light strike-thorugh">Massa ultiricies mi</span> 
-                        </p>
+                        <nav>
+                            <ul class="">
+                                <li>Alda dere </li>
+                                <li>Nec feugiat nisi</li>
+                                <li>Nulla at volutpat</li>
+                                <li>Pharetra massa</li>
+                                <li class="color strike-thorugh">Massa ultiricies mi</li>
+                            </ul>
+                        </nav>
                         
                     </div>
                     <div class="buy-btn">
@@ -745,9 +776,15 @@
                     <h3>Developer</h3>
                     <div>
                         <h4> <span class="bold color-primary font-size-5rem">$</span> <span class="font-size-2rem bold  color-primary span">29</span> <span class="color-ultra-light">/ month</span></h4>
-                        <p>Alda dere<br>Nec feugiat nisi<br>Nulla at volutpat<br>
-                       Pharetra massa<br>Massa ultiricies mi
-                        </p>
+                        <nav>
+                            <ul class="">
+                                <li>Alda dere </li>
+                                <li>Nec feugiat nisi</li>
+                                <li>Nulla at volutpat</li>
+                                <li>Pharetra massa</li>
+                                <li>Massa ultiricies mi</li>
+                            </ul>
+                        </nav>
                         
                     </div>
                     <div class="buy-btn">
@@ -760,9 +797,15 @@
                     <h5>Advanced</h5>
                     <div>
                         <h4> <span class="bold color-primary font-size-5rem">$</span> <span class="font-size-2rem bold  color-primary span">49</span> <span class="color-ultra-light">/ month</span></h4>
-                        <p>Alda dere<br>Nec feugiat nisi<br>Nulla at volutpat<br>
-                       Pharetra massa<br>Massa ultiricies mi
-                        </p>
+                        <nav>
+                            <ul class="">
+                                <li>Alda dere </li>
+                                <li>Nec feugiat nisi</li>
+                                <li>Nulla at volutpat</li>
+                                <li>Pharetra massa</li>
+                                <li>Massa ultiricies mi</li>
+                            </ul>
+                        </nav>
                         
                     </div>
                     <div class="buy-btn">
@@ -781,10 +824,10 @@
         <div class="container">
 
        
-        <div class="flex flex-100 colom item-center margin-top text-center sm-flex-colom">
+        <article class="flex flex-100 colom item-center margin-top text-center sm-flex-colom">
             <h2 class="text-capitalise">F.A.Q.</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
-        </div>
+        </article>
         <div class="padding-bottom">
             <div class="flex flex-100 colom faq-box">
                 <div class="flex flex-100 space-between">
@@ -792,7 +835,7 @@
 
                    
                             <i class="margin-right-ponit-5 font-size-1rem color-light-primary far fa-question-circle"></i>
-                            <q class="color-primary bold font-size-8rem">Non Consectetur a erat nam at lectus urna duis</q>
+                            <p class="color-primary bold font-size-8rem">Non Consectetur a erat nam at lectus urna duis</p>
                     </div>
                     <i class="color-primary fas fa-angle-up"></i>
 
@@ -820,7 +863,7 @@
 
                    
                             <i class="margin-right-ponit-5 font-size-1rem color-light-primary far fa-question-circle"></i>
-                            <q class=" bold color-brown font-size-8rem">Non Consectetur a erat nam at lectus urna duis</q>
+                            <p class=" bold color-brown font-size-8rem">Non Consectetur a erat nam at lectus urna duis</p>
                     </div>
                     <i class=" fas fa-angle-down"></i>
 
@@ -833,7 +876,7 @@
 
                    
                             <i class="margin-right-ponit-5 font-size-1rem color-light-primary far fa-question-circle"></i>
-                            <q class=" bold color-brown font-size-8rem">Non Consectetur a erat nam at lectus urna duis</q>
+                            <p class=" bold color-brown font-size-8rem">Non Consectetur a erat nam at lectus urna duis</p>
                     </div>
                     <i class=" fas fa-angle-down"></i>
 
@@ -846,7 +889,7 @@
 
                    
                             <i class="margin-right-ponit-5 font-size-1rem color-light-primary far fa-question-circle"></i>
-                            <q class=" bold color-brown font-size-8rem">Non Consectetur a erat nam at lectus urna duis</q>
+                            <p class=" bold color-brown font-size-8rem">Non Consectetur a erat nam at lectus urna duis</p>
                     </div>
                     <i class=" fas fa-angle-down"></i>
 
@@ -858,10 +901,10 @@
     </section>
     <section class="contact">
         <div class="container">
-            <div class="flex flex-100 colom item-center margin-top text-center">
+            <article class="flex flex-100 colom item-center margin-top text-center">
                 <h2 class=" bold color-brown text-capitalise">Contact</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deleniti alias aliquid id, tenetur officia voluptatum et, molestiae ullam molestias maiores adipisci cupiditate reprehenderit aut omnis laudantium quasi dolorum minus?</p>
-            </div>
+            </article>
             <div class="flex flex-100 space-between padding-bottom sm-flex-colom">
                 <div class="contact-box flex flex-30 padding">
                     <div class="  location flex margin-right">
@@ -897,6 +940,7 @@
                     </div>
                 </div>
             </div>
+            <fieldset>
             <form>
                 <div class="flex flex-100 space-between sm-flex-colom">
                     <input class="flex-45 form-name" type="text" placeholder="Your Name"/>
@@ -917,9 +961,10 @@
                <div class=" text-center send-button">
 
               
-                <a class="btn " href="#">Send Message</a>
+                <button class="">Send Message</button>
                 </div>
             </form>
+        </fieldset>
 
         </div>
 
@@ -934,8 +979,8 @@
                     <address class="margin-top">
                         A108 Adam Street<br>New York, NY 535022<br>United States
                     </address>
-                    <phone><span class="bold">Phone</span>: +155895548855</phone>
-                    <Email><span class="bold">Email</span>: info@example.com</Email>
+                    <small><span class="bold">Phone</span>: +155895548855</small>
+                    <small><span class="bold">Email</span>: info@example.com</small>
                 </div>
                 <div class="flex flex-20 colom sm-margin-top">
                     <h3 class="bold color-brown">Useful Links</h3>
@@ -1042,6 +1087,6 @@
        
        
     </footer>
-
+</main>
   </body>
 </html>

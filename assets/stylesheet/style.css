@@ -135,7 +135,7 @@ table {
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 17px;
   scroll-behavior: smooth;
 }
 body {
@@ -264,6 +264,10 @@ a {
 .box-shadow {
   box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro;
 }
+.tabs-color{
+  background-color: #fcf1ec;
+  color: var(--primary);
+}
 
 .btn {
   width: 1.5rem;
@@ -332,12 +336,12 @@ a {
 }
 .sub-menu {
   position: absolute;
-  /* width: 2rem; */
-  background-color: var(--secondary);
+  width: 10rem;
+  background-color: var(--white);
   padding: 1rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); */
   border-radius: 0.4rem;
-  transform: translateX(-75%);
+  transform: translateX(-70%);
   display: none;
 }
 .sub-menu-box:hover .sub-menu {
@@ -351,11 +355,12 @@ a {
 .sub-sub-menu {
   position: absolute;
   /* width: 2rem; */
-  background-color: var(--secondary);
+  background-color: var(--white);
   padding: 1rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); */
   border-radius: 0.4rem;
-  transform: translateX(15%);
+  transform: translateX(10%);
+  transform: translateY(30%);
   display: none;
 }
 .sub-sub-menu-box:hover .sub-sub-menu {
@@ -363,7 +368,11 @@ a {
   top: -2.2rem;
 }
 .drop-down-2 {
-  margin-left: 2rem;
+  margin-left: 0rem;
+}
+.drop-down-2 i{
+  margin-left: 1.5rem;
+  font-size: .5rem;
 }
 .header a:hover {
   color: var(--primary);
@@ -711,8 +720,9 @@ a {
 .owner-container {
   display: -webkit-inline-box;
   overflow: auto;
+ 
 }
-.owner-details name {
+.owner-details strong {
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -808,7 +818,7 @@ a {
   margin: 1rem 0;
   margin-bottom: 2rem;
 }
-.bio name {
+.bio span {
   display: inline-block;
   font-weight: bold;
   margin-top: 1rem;
@@ -844,6 +854,10 @@ a {
   position: absolute;
   bottom: 5rem;
   display: none;
+  
+}
+.team-nav a{
+  color: black;
 }
 .team-box:hover .team-nav {
   display: unset;
@@ -854,10 +868,14 @@ a {
   color: var(--brown);
   padding-top: 1rem;
 }
-.pricing p {
-  font-size: 1rem;
-  margin: 1rem 0;
+.pricing nav ul li {
+  font-size: .8rem;
+  margin: .8rem 0;
   color: var(--brown);
+}
+
+.pricing nav ul .color{
+  color: #c2bdbd;
 }
 .pricing .pricing-box {
   background-color: var(--white);
@@ -911,7 +929,7 @@ h5 {
   font-size: 0.6rem;
   right: 4rem;
   top: -0.5rem;
-  left: 8rem;
+  left: 9rem;
   width: 3rem;
   background-color: var(--primary);
   color: var(--white);
@@ -929,7 +947,7 @@ h5 {
   margin-top: 1.5rem;
 }
 .faq p {
-  margin: 1rem 0;
+  margin: .5rem 0;
   color: var(--brown);
 }
 .faq-box {
@@ -995,11 +1013,15 @@ form textarea {
   color: white;
   box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro;
 }
-form .btn {
+form button {
   margin-top: 1rem;
   color: white;
+  width: 8.4rem;
   font-size: 0.8rem;
-  padding: 0.7rem 1rem;
+  padding: .7rem .5rem;
+  border:0;
+  padding-bottom: .5rem;
+  background-color: var(--primary);
 }
 /* footer  */
 .footer .footer-top {
@@ -1036,7 +1058,7 @@ form .btn {
   align-items: center;
   height: 2.5rem;
   width: 6rem;
-
+padding: 1.3rem;
   justify-content: center;
 }
 
@@ -1129,21 +1151,36 @@ form .btn {
   background-color: var(--primary);
   /* box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem gainsboro; */
 }
-#toggle,
-.bars {
+
+#toggle{
+  display:none;
+}
+
+label{
   display: none;
 }
 /* **********************************Mobile view ***********************/
 @media screen and (max-width: 768px) {
   html {
-    font-size: 13.5px;
+    font-size: 14px;
   }
-  /* .container{
-        max-width: 740px;
-    } */
-
+ 
+  .header nav a,.header nav li{
+    font-size: 1.3rem;
+    margin-top: .5rem;
+  }
+  
+ .sm-container{
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  
+ } 
   .sm-flex-100 {
     flex: 0 1 100%;
+  }
+  .sm-flex-20{
+    flex: 0 1 20%;
   }
   .sm-flex-10 {
     flex: 0 1 10%;
@@ -1192,13 +1229,26 @@ form .btn {
   .sm-font-size {
     font-size: 1.5rem;
   }
+  .sm-font-size-2rem{
+    font-size: 3.5rem;
+  }
   .sm-padding {
     padding: 1rem;
   }
   .sm-cover {
     object-fit: cover;
   }
+h5{
+  right:0rem;
+    top: 0rem;
+    left: 14rem;
+    width: 10rem;
+  
+}
 
+  /* .sm-overflow{
+    overflow-x: auto;
+  } */
   .subscribe-btn a {
     height: 2.8rem;
     width: 7rem;
@@ -1217,12 +1267,13 @@ form .btn {
   #toggle:checked ~ .nav-bar {
     display: inline-block;
   }
-  .bars {
+  label .bars {
+    position: fixed;
     display: inline-block;
     font-size: 2.5rem;
     color: var(--brown);
-    position: fixed;
-    right: 2rem;
+    
+    right: 1rem;
     top: 2rem;
     z-index: 150;
   }
@@ -1232,10 +1283,11 @@ form .btn {
     top: 2rem;
     z-index: 150;
   }
-
+/*   
   .header-style {
     position: relative;
-  }
+  } */
+  
   .header-style nav {
     position: fixed;
     left: 0;
@@ -1244,39 +1296,73 @@ form .btn {
     right: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(39, 112, 160, 0.5);
-    padding-top: 12rem;
-    z-index: 100;
+    background-color: rgba(148, 164, 175, 0.5);
+    padding-top: 5rem;
+    z-index: 2;
+    
   }
   .header-style nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0rem;
+    color: black;
+    margin-right: 16rem;
+
+    
   }
-  .header-style nav ul li a {
-    font-size: 1.2rem;
+  
+  .header-style nav ul li{
+    /* margin-top: 1.8rem; */
     text-transform: uppercase;
+   
   }
+  
   .sub-menu li a {
-    font-size: 0.8rem;
-    display: inline;
+    font-size: 0.9rem;
+    color: black;
+
+    margin-top: 0rem;
+    padding: 0;
+   
+  }
+  .sub-menu .main-list a{
+    color: black;
+    font-size: .7rem;
+    margin: 0;
   }
   .sub-menu {
-    left: -5rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+   
+   
+   
+    left: 16rem;
+    background-color: rgba(255, 255, 255, 0.8); 
   }
   .sub-sub-menu {
-    top: -4.8rem;
+    display: none;
+   
+     top: 0.8rem;
     right: -24rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8); 
+  }
+.sub-menu-box:hover{
+  display: inline-block;
+}
+.sub-sub-menu-box:hover{
+  display: inline-block;
+}
+  
+  #toggle{
+    display:none;
+  }
+  
+  label{
+    display: inline-block;
   }
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 6.5px;
-  }
-}
-@media screen and (max-width: 1000px) {
+
+/* @media screen and (max-width: 1000px) {
   html {
     font-size: 13px;
   }
@@ -1294,9 +1380,5 @@ form .btn {
 @media screen and (min-width: 1400px) {
   html {
     font-size: 18px;
-  }
-}
+  } */
 
-.bars{
-  display:none;
-}
